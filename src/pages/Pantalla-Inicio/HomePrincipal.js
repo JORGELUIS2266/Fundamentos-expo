@@ -1,9 +1,9 @@
 import { Platform, StyleSheet, Text, View, StatusBar,ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import CardBasico from '../components/CardBasico';
-import CardImg from '../components/CardImg';
-import CardV2 from '../components/CardV2';
-import CardV3 from '../components/CardV3';
+import CardBasico from '../../components/CardBasico';
+import CardImg from '../../components/CardImg';
+import CardV2 from '../../components/CardV2';
+import CardV3 from '../../components/CardV3';
 
 
 
