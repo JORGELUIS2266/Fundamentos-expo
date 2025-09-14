@@ -1,6 +1,6 @@
-import Home from './src/pages/Home/Home'
+//import Home from './src/pages/Home/Home'
 
-//import Botones from './src/pages/Botones';
+import Botones from './src/pages/Botones';
 // import Botones2 from './src/pages/Botones2';
 //import Homeprincipal from './src/pages/HomePrincipal';
 
@@ -11,8 +11,8 @@ import Home from './src/pages/Home/Home'
 
 function App() {
   return (
-     <Home/>
-    //<Botones/>
+    // <Home/>
+    <Botones/>
     // <Botones2/>
    //<Homeprincipal/>
   // <Formulario />
