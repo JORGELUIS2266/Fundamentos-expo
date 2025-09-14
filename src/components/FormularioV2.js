@@ -9,7 +9,11 @@ export default function FormularioV2()  {
         <SafeAreaView style={style.main}>
             <ScrollView>
                 <Text style={style.title}>Formulario V2</Text>
+
                 <View style={style.container}>
+                    <TouchableOpacity style={style.cerrarBoton}>
+                        <Icon name="close" size={20} color="#ffffffff"  />
+                    </TouchableOpacity>
                     <Image source={{uri:'https://static.wikia.nocookie.net/patoaventuras/images/f/fa/PatoDonald%282017%29.png/revision/latest?cb=20180421215810&path-prefix=es'}} style={style.avatar}/>
                    <Text style={style.name}>Jorge Luis Hernandez Matra</Text>
                    <View style={style.infoContainer}>
@@ -23,13 +27,14 @@ export default function FormularioV2()  {
                     <Text style={style.info}>9532113373</Text>
                     <Text style={style.label}>N.C</Text>
                     <Text style={style.info}>22620235</Text>
-
                 </View>
+
                    <TouchableOpacity style={style.botonGrandeiCON}>
                                              
-                                             <Icon name="save" size={20} color="#ffffff" style={style.iconIZQ} />
-                                             <Text style={style.textoBotonGrande}>Guardar</Text>
-                                           </TouchableOpacity>
+                 <Icon name="save" size={20} color="#ffffff" style={style.iconIZQ} />
+                 <Text style={style.textoBotonGrande}>Guardar</Text>
+                 </TouchableOpacity>
+
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -138,5 +143,22 @@ const style = StyleSheet.create({
         marginTop: 3,
         alignSelf: 'center',
     },
+    cerrarBoton: {
+        position: 'absolute',
+        top: 10,
+        right:15,
+        //zIndex: 10,
+        borderRadius:30,
+        backgroundColor: '#9c0303ff',
+        width:30,
+        justifyContent:'center',
+        alignItems:'center',
+        elevation:3,
+
+
+
+    },
+
+
 
 });
