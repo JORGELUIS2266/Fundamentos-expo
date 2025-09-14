@@ -2,6 +2,9 @@ import { Platform, StyleSheet, Text, View,StatusBar,TouchableOpacity} from 'reac
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
+
+
+
 export default  function Botones() {
   return (
     <View style={styles.main}>
@@ -77,6 +80,12 @@ const styles = StyleSheet.create({
     },
     textosombra: {
         color: '#000000ff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
+    textoBotonGrande: {
+        color: '#ffffffff',
         fontSize: 20,
         fontWeight: 'bold',
         textAlign: 'center',
