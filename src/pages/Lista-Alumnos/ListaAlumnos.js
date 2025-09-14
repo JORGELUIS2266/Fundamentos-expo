@@ -1,5 +1,6 @@
 import { StyleSheet, View, Platform, StatusBar, Text, TextInput, ScrollView, TouchableOpacity, Image, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 export default function ListaAlumnos() {
     return (
@@ -15,6 +16,21 @@ export default function ListaAlumnos() {
                 
             </View>
             {/* Cierre de AppBar */}
+
+            {/* Inicio de contenido(Lista de alumnos) */}
+            <ScrollView >
+                <Text style={styles.sectionTitle} >Lista de Alumnos</Text>
+                <View style={styles.card}> 
+                     <Image source={{uri:'https://static.wikia.nocookie.net/patoaventuras/images/f/fa/PatoDonald%282017%29.png/revision/latest?cb=20180421215810&path-prefix=es'}} style={styles.avatar}/>
+                     <View style={styles.cardInfo}>
+                        <Text style={styles.UserName} >Jorge Luis Hernandez Matra</Text>
+                        <Text style={styles.UserDetails} >ING. Sistemas Computacionales</Text>
+                     </View>
+                
+                </View>
+                
+            </ScrollView>
+            {/* cierre de contenido (Lista de Alumnos) */}
         </SafeAreaView>
     );
 }
@@ -41,7 +57,13 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontWeight: 'bold',
 
-    }
+    },
+    card: {},
+    card: {},
+    UserName:{},
+    UserDetails:{},
+
+
 
 
 
