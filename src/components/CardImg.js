@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, Image } from 'react-native';
 export default function CardImg() {
     return (
         <View style={style.card}>
-            <Image style={style.imagen} source={'https://th.bing.com/th/id/R.160a7b38ea3369f457a419'}/>
+            <Image style={style.imagen} source={{uri:'https://media-front.elmostrador.cl/2014/06/donald.jpg'}}/>
             <Text style={style.Titulo}>Card con imagen</Text>
             <Text style={style.cont}>Contenido del card</Text>
             <Text style={style.cont}>Jorge luis Hernandez Matra</Text>
@@ -15,7 +15,7 @@ export default function CardImg() {
 const style = StyleSheet.create({
     card: {
 
-        backgroundColor: '#ffffff',
+        backgroundColor: '#2ffa14ff',
         padding: 16,
         margin: 10,
         borderRadius: 10,

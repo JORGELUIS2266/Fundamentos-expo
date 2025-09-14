@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function CardV3() {
     return (
         <View style={style.card}>
-            <Image style={style.imagen} source={'https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Faabelizabeth%2Fpato-donald%2F&psig=AOvVaw0Pv_2hRZj7tLEagqUOgFGN&ust=1757792830830000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKi-s7-B1I8DFQAAAAAdAAAAABAE' } />
+            <Image style={style.imagen} source={{uri:'https://p.turbosquid.com/ts-thumb/LW/gSAIoW/0xzguMfq/front/png/1287151477/1920x1080/fit_q99/f337cf6cc4793c7b0ccf078575aae3fdbe072493/front.jpg' }} />
             <View style={style.cardC}>
                 <Text style={style.Titulo}>Card con imagen</Text>
                 <Text style={style.cont}>Contenido del card</Text>

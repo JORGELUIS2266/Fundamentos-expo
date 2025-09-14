@@ -5,7 +5,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function CardV2() {
     return (
         <View style={style.card}>
-            <Image style={style.imagen} source={ 'https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Faabelizabeth%2Fpato-donald%2F&psig=AOvVaw0Pv_2hRZj7tLEagqUOgFGN&ust=1757792830830000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKi-s7-B1I8DFQAAAAAdAAAAABAL' } />
+            <Image style={style.imagen} source={ { 
+                uri: 'https://tierra2-0.com/cdn/shop/products/FunkoPop-DisneyClasicos-PatoDonald01.jpg?v=1679688669&width=493'} } />
             <View style={style.cardC}>
                 <Text style={style.Titulo}>Card con imagen</Text>
                 <Text style={style.cont}>Contenido del card</Text>

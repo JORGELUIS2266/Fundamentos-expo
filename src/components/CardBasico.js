@@ -14,7 +14,7 @@ export default function CardBasico() {
 const style = StyleSheet.create({
     card: {
 
-        backgroundColor: '#ffffffff',
+        backgroundColor: '#dadadaff',
         padding: 16,
         margin: 10,
         borderRadius: 10,
