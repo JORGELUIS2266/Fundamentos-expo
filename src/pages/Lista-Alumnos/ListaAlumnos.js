@@ -20,18 +20,22 @@ export default function ListaAlumnos() {
             {/* Inicio de contenido(Lista de alumnos) */}
             <ScrollView style={{padding:16}}>
                 <Text style={styles.sectionTitle} >Alumnos de Aplicaciones Moviles</Text>
-                <View style={styles.card}> 
+                 {[1,2,3,4,5,6,7].map(()  => (
+                     <View style={styles.card}> 
                      <Image source={{uri:'https://static.wikia.nocookie.net/patoaventuras/images/f/fa/PatoDonald%282017%29.png/revision/latest?cb=20180421215810&path-prefix=es'}} style={styles.avatar}/>
                      <View style={styles.cardInfo}>
                         <Text style={styles.UserName} >Jorge Luis Hernandez Matra</Text>
                         <Text style={styles.UserDetails} >ING. Sistemas Computacionales</Text>
                         <TouchableOpacity style={styles.saveButton}>
                             <Text style={styles.saveButtonText}>Ver mas</Text>
-
                         </TouchableOpacity>
                      </View>
+
                 
                 </View>
+                 ))}
+
+               
                 
                 
             </ScrollView>
