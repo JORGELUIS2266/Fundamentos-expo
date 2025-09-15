@@ -18,13 +18,17 @@ export default function ListaAlumnos() {
             {/* Cierre de AppBar */}
 
             {/* Inicio de contenido(Lista de alumnos) */}
-            <ScrollView >
-                <Text style={styles.sectionTitle} >Lista de Alumnos</Text>
+            <ScrollView style={{padding:16}}>
+                <Text style={styles.sectionTitle} >Alumnos de Aplicaciones Moviles</Text>
                 <View style={styles.card}> 
                      <Image source={{uri:'https://static.wikia.nocookie.net/patoaventuras/images/f/fa/PatoDonald%282017%29.png/revision/latest?cb=20180421215810&path-prefix=es'}} style={styles.avatar}/>
                      <View style={styles.cardInfo}>
                         <Text style={styles.UserName} >Jorge Luis Hernandez Matra</Text>
                         <Text style={styles.UserDetails} >ING. Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}>Ver mas</Text>
+
+                        </TouchableOpacity>
                      </View>
                 
                 </View>
@@ -58,10 +62,37 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
 
     },
-    card: {},
-    card: {},
+    sectionTitle: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        
+        padding:16,
+
+
+    },
+    card: {
+        padding:16,
+        flexDirection: 'row',
+        borderRadius: 16,
+        backgroundColor: '#fff',
+        elevation:2,
+        marginBottom:5
+
+    },
+    avatar:{
+        width:60,
+        height: 60,
+        borderRadius: 50,
+        marginRight:12,
+    },
+    cardInfo: {
+
+    },
     UserName:{},
     UserDetails:{},
+    saveButton:{},
+    saveButtonText:{},
+    
 
 
 
