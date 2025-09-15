@@ -33,6 +33,7 @@ export default function ListaAlumnos() {
                 
                 </View>
                 
+                
             </ScrollView>
             {/* cierre de contenido (Lista de Alumnos) */}
         </SafeAreaView>
@@ -86,12 +87,35 @@ const styles = StyleSheet.create({
         marginRight:12,
     },
     cardInfo: {
+        flex:1,
+        justifyContent: 'center',
 
     },
-    UserName:{},
-    UserDetails:{},
-    saveButton:{},
-    saveButtonText:{},
+    UserName:{
+        fontWeight: 'bold',
+        fontSize: 16,
+        marginBottom: 12,
+        
+    },
+    UserDetails:{
+        fontWeight: 'bold',
+        fontSize: 14,
+        marginBottom: 12,
+    },
+    saveButton:{
+        backgroundColor: '#0059ffff', 
+        marginTop: 10,
+        padding:10,
+        alignSelf: 'flex-end',
+        paddingVertical: 6,
+        borderRadius: 15,
+       
+       
+    },
+    saveButtonText:{
+        fontSize: 17,
+        color: '#ffffffff',
+    },
     
 
 
